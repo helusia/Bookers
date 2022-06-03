@@ -6,9 +6,9 @@
 
 <h2>New Book</h2>
 <%= form_with model: @book do |f| %>
-  <%= f.label :Title %>
+  <p>Title</p>
   <%= f.text_field :title %>
-  <%= f.label :Body %>
+  <p>Body</p>
   <%= f.text_area :body %>
   <%= f.submit '投稿' %>
 <% end %>
