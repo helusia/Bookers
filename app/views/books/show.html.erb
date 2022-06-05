@@ -1,3 +1,5 @@
 <h1>投稿詳細</h1>
 <%= @book.title %>
 <%= @book.body %>
+
+<%= link_to 'Edit', edit_book_path(@book.id) %>
