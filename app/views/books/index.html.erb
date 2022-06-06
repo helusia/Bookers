@@ -3,6 +3,9 @@
 <% @books.each do |book| %>
 <%= book.title %>
 <%= book.body %>
+<%= link_to 'Show', book_path(book.id) %>
+<%= link_to 'Edit', edit_book_path(book.id) %>
+<%= link_to 'Destroy', book_path(book.id), method: :delete %>
 <% end %>
 
 <h2>New Book</h2>
