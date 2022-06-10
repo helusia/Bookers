@@ -1,6 +1,8 @@
-<h1>投稿詳細</h1>
-<%= flash[:notice] %>
+
+<%= flash[:notice] %> <br>
+<strong>Title:</strong>
 <%= @book.title %>
+<strong>Body</strong>
 <%= @book.body %>
 
 <%= link_to 'Edit', edit_book_path(@book.id) %>
